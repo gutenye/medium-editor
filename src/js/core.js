@@ -142,7 +142,7 @@
             } else if (!event.shiftKey && !event.ctrlKey) {
                 // only format block if this is not a header tag
                 if (!/h\d/.test(tagName)) {
-                    this.options.ownerDocument.execCommand('formatBlock', false, 'p');
+                    this.options.ownerDocument.execCommand('formatBlock', false, 'div');
                 }
             }
         }
