@@ -131,7 +131,7 @@
         }
 
         if (MediumEditor.util.isMediumEditorElement(node) && node.children.length === 0) {
-            this.options.ownerDocument.execCommand('formatBlock', false, 'p');
+            this.options.ownerDocument.execCommand('formatBlock', false, 'div');
         }
 
         if (MediumEditor.util.isKey(event, MediumEditor.util.keyCode.ENTER) && !MediumEditor.util.isListItem(node)) {
